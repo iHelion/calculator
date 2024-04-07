@@ -13,31 +13,31 @@ def dzielenie(a, b):
     else:
         return a / b
 
-print("Welcome, in calculator made by Helion")
-print("Choose operation:")
-print("1. +")
-print("2. -")
-print("3. *")
-print("4. /")
+while True:
+print("            _ _                         _      ")
+print("  /\  /\___| (_) ___  _ __     ___ __ _| | ___ ")
+print(" / /_/ / _ \ | |/ _ \| '_ \   / __/ _` | |/ __|")
+print("/ __  /  __/ | | (_) | | | | | (_| (_| | | (__ ")
+print("\/ /_/ \___|_|_|\___/|_| |_|  \___\__,_|_|\___|")
+print("choose operation: 1.+ 2.- 3.* 4./")
 
-wybor = input("Choose operation (1/2/3/4): ")
+    wybor = input("choose operation number (1/2/3/4): ")
 
-if wybor in ('1', '2', '3', '4'):
-    liczba1 = float(input("Give first number: "))
-    liczba2 = float(input("Give second number: "))
+    if wybor in ('1', '2', '3', '4'):
+        liczba1 = float(input("first number: "))
+        liczba2 = float(input("second number: "))
 
-    if wybor == '1':
-        print("Result:", dodawanie(liczba1, liczba2))
-    elif wybor == '2':
-        print("Result:", odejmowanie(liczba1, liczba2))
-    elif wybor == '3':
-        print("Result:", mnozenie(liczba1, liczba2))
-    elif wybor == '4':
-        print("Result:", dzielenie(liczba1, liczba2))
+        if wybor == '1':
+            print("result:", dodawanie(liczba1, liczba2))
+        elif wybor == '2':
+            print("result:", odejmowanie(liczba1, liczba2))
+        elif wybor == '3':
+            print("result:", mnozenie(liczba1, liczba2))
+        elif wybor == '4':
+            print("result:", dzielenie(liczba1, liczba2))
 
-kontynuacja = input("Want continue? (yes/no): ")
+        kontynuacja = input("want continue? (yes/no): ")
         if kontynuacja.lower() != 'yes':
             break
-
-else:
-    print("damn, choose correct number")
+    else:
+        print("AntiTroll-antycheat detected wrong number")
