@@ -34,5 +34,10 @@ if wybor in ('1', '2', '3', '4'):
         print("Result:", mnozenie(liczba1, liczba2))
     elif wybor == '4':
         print("Result:", dzielenie(liczba1, liczba2))
+
+kontynuacja = input("Want continue? (yes/no): ")
+        if kontynuacja.lower() != 'yes':
+            break
+
 else:
     print("damn, choose correct number")
